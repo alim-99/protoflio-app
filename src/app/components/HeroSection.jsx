@@ -25,7 +25,7 @@ const HeroSection = () => {
           Hire Me
           </Link>
           <Link
-          href="https://alim-99.github.io/github-readme-generator/"
+          href="https://alim-99.github.io/github-generator/"
           className="px-6 py-3 sm:w-fit w-full rounded-full mr-4  bg-[#ADADFF] hover:bg-[#9898f3] text-black">
             See Github Readme
           </Link>
