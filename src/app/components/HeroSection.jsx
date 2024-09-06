@@ -19,15 +19,15 @@ const HeroSection = () => {
         modern websites.
         </p>
         <div>
-        <Link
-          href="/#contact"
-          className=" px-6 py-3 sm:w-fit w-full rounded-full mr-4  bg-white hover:bg-slate-300 text-black">
-          Hire Me
+          <Link href="/#contact">
+          <button className="cursor-pointer transition-all mr-4 bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
+            Hire Me
+          </button>
           </Link>
-          <Link
-          href="https://alim-99.github.io/github-generator/"
-          className="px-6 py-3 sm:w-fit w-full rounded-full mr-4  bg-[#ADADFF] hover:bg-[#9898f3] text-black">
-            See Github Readme
+          <Link href="https://github.com/alim-99/alim-99">
+          <button className="cursor-pointer transition-all mr-4 mt-3 bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
+            Github Readme
+          </button>
           </Link>
         </div>
       </div>
