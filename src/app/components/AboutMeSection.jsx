@@ -12,10 +12,12 @@ const TAB_DATA = [
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
+        <li>Typescript</li>
         <li>Tailwind</li>
         <li>React</li>
         <li>Nextjs</li>
         <li>Bootstrap</li>
+        <li>Python</li>
       </ul>
     ),
   },
@@ -26,6 +28,7 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>Git & Github</li>
         <li>Node.js</li>
+        <li>Linux</li>
       </ul>
     ),
   },
@@ -54,7 +57,7 @@ const AboutSection = () => {
             looking to expand my knowledge and skill set. I am a team player and
             I am excited to work with others to create amazing applications.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row justify-start mt-10">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -78,5 +81,7 @@ const AboutSection = () => {
     </section>
   );
 };
+
+export default AboutSection;
 
 export default AboutSection;
