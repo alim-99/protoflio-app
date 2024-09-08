@@ -57,7 +57,7 @@ const projectsData = [
     image: "/images/Capture.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/alim-99/front-page",
-    previewUrl: "https://alim-99.github.io/front-page/",
+    previewUrl: "https://front-page-rouge.vercel.app/",
   },
 ];
 
