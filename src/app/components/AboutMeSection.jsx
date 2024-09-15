@@ -14,9 +14,9 @@ const TAB_DATA = [
         <li>JavaScript</li>
         <li>Typescript</li>
         <li>Tailwind</li>
+        <li>Bootstrap</li>
         <li>React</li>
         <li>Nextjs</li>
-        <li>Bootstrap</li>
         <li>Python</li>
       </ul>
     ),
@@ -28,7 +28,9 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>Git & Github</li>
         <li>Node.js</li>
+        <li>Mongodb</li>
         <li>Linux</li>
+        <li>Cypress</li>
       </ul>
     ),
   },
@@ -47,7 +49,7 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={700} height={700} />
+        <Image src="/images/about-image.png" width={600} height={600} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
@@ -57,7 +59,7 @@ const AboutSection = () => {
             looking to expand my knowledge and skill set. I am a team player and
             I am excited to work with others to create amazing applications.
           </p>
-          <div className="flex flex-row justify-start mt-6">
+          <div className="flex flex-row justify-start mt-4">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -73,7 +75,7 @@ const AboutSection = () => {
               Tools{" "}
             </TabButton>
           </div>
-          <div className="mb-4">
+          <div className="mb-5">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
