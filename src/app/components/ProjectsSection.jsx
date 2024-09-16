@@ -9,8 +9,8 @@ const projectsData = [
     id: 1,
     title: "Elzero Template 3",
     description: "Elzero Template 3 for training on building websites",
-    image: "/images/Capture4.png",
-    tag: ["All", "Web"],
+    imageUrl: "/images/Capture4.png",
+    tag: ["All"],
     gitUrl: "https://github.com/alim-99/template-3",
     previewUrl: "https://alim-99.github.io/template-3/",
   },
@@ -18,8 +18,8 @@ const projectsData = [
     id: 2,
     title: "Elzero Dashboard",
     description: "Elzero Dashboard for traning on creating responsive dahsboard",
-    image: "/images/Capture2.png",
-    tag: ["All", "Web"],
+    imageUrl: "/images/Capture2.png",
+    tag: ["All"],
     gitUrl: "https://github.com/alim-99/elzero-dashboard",
     previewUrl: "https://alim-99.github.io/elzero-dashboard/",
   },
@@ -27,8 +27,8 @@ const projectsData = [
     id: 3,
     title: "Bondi Website",
     description: "Website for traning on bootstrap",
-    image: "/images/Capture5.png",
-    tag: ["All", "Web"],
+    imageUrl: "/images/Capture5.png",
+    tag: ["All"],
     gitUrl: "https://github.com/alim-99/bondi-design",
     previewUrl: "https://alim-99.github.io/bondi-design/",
   },
@@ -36,8 +36,8 @@ const projectsData = [
     id: 4,
     title: "Hangman Game Website",
     description: "Hangman Game for traning on vanila javascript",
-    image: "/images/Capture6.png",
-    tag: ["All", "Mobile"],
+    imageUrl: "/images/Capture6.png",
+    tag: ["All"],
     gitUrl: "https://github.com/alim-99/hangman_game",
     previewUrl: "https://alim-99.github.io/hangman_game/",
   },
@@ -45,8 +45,8 @@ const projectsData = [
     id: 5,
     title: "Elzero Template 2",
     description: "Kasper Tameplate for training on building web apps",
-    image: "/images/Capture3.png",
-    tag: ["All", "Web"],
+    imageUrl: "/images/Capture3.png",
+    tag: ["All"],
     gitUrl: "https://github.com/alim-99/template2",
     previewUrl: "https://alim-99.github.io/template2/",
   },
@@ -54,8 +54,8 @@ const projectsData = [
     id: 6,
     title: "Bootstarp Website",
     description: "Front page for training on bootstrap",
-    image: "/images/Capture.png",
-    tag: ["All", "Web"],
+    imageUrl: "/images/Capture.png",
+    tag: ["All"],
     gitUrl: "https://github.com/alim-99/front-page",
     previewUrl: "https://front-page-rouge.vercel.app/",
   },
@@ -81,7 +81,7 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-32 mb-8 md:mb-12">
+      <h2 className="text-center text-4xl font-bold text-white mt-20">
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
@@ -91,7 +91,7 @@ const ProjectsSection = () => {
           isSelected={tag === "All"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-3 gap-4 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
@@ -104,7 +104,7 @@ const ProjectsSection = () => {
               key={project.id}
               title={project.title}
               description={project.description}
-              imgUrl={project.image}
+              imgUrl={project.imageUrl}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
             />
@@ -114,6 +114,5 @@ const ProjectsSection = () => {
     </section>
   );
 };
-
 
 export default ProjectsSection;
