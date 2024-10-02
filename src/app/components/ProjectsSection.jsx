@@ -52,12 +52,12 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "Bootstarp Website",
-    description: "Front page for training on bootstrap",
-    imageUrl: "/images/Capture.png",
+    title: "Product Store Service",
+    description: "A Product Sore Web Service For Training on The Mern Stack",
+    imageUrl: "/images/Capture8.png",
     tag: ["All"],
-    gitUrl: "https://github.com/alim-99/front-page",
-    previewUrl: "https://front-page-rouge.vercel.app/",
+    gitUrl: "https://github.com/alim-99/mern-stack",
+    previewUrl: "https://striped-rozalin-aliorganization-1012dd5c.koyeb.app/",
   },
 ];
 
