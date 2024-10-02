@@ -18,7 +18,6 @@ const TAB_DATA = [
         <li>React</li>
         <li>Nextjs</li>
         <li>Python</li>
-        <li>Vitejs</li>
       </ul>
     ),
   },
@@ -32,6 +31,7 @@ const TAB_DATA = [
         <li>Mongodb</li>
         <li>Linux</li>
         <li>Cypress</li>
+        <li>Vitejs</li>
       </ul>
     ),
   },
