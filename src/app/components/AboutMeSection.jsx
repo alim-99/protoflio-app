@@ -18,6 +18,7 @@ const TAB_DATA = [
         <li>React</li>
         <li>Nextjs</li>
         <li>Python</li>
+        <li>Vitejs</li>
       </ul>
     ),
   },
